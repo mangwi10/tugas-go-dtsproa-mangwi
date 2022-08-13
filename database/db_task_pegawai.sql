@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 13, 2022 at 05:52 PM
+-- Generation Time: Aug 13, 2022 at 07:30 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -39,13 +39,8 @@ CREATE TABLE `tb_task` (
 --
 
 INSERT INTO `tb_task` (`id_task`, `deskripsi`, `pegawai`, `deadline`) VALUES
-(1, 'Memperbaiki Wifi', 'nur', '18/12/2022'),
-(2, 'Memperbaiki laptop FO', 'adi', '19/02/2022'),
-(4, 'Memperbaiki CCTV, TV, AC', 'Mes', '01/11/2022'),
-(5, 'memperbaiki remote', 'Agus', '21/06/2022'),
-(6, 'Memperbaik Ac', 'Made', '23/06/2022'),
-(7, 'Memasang Wifi', 'ketut', '12/09/2022'),
-(8, 'Memasang kabel lan', 'komag', '12/09/2022');
+(10, 'memperbaiki laptop rusak', 'komang', '2022-02-10'),
+(11, 'membuat jaringan', 'Agus', '2022-04-02');
 
 --
 -- Indexes for dumped tables
@@ -65,7 +60,7 @@ ALTER TABLE `tb_task`
 -- AUTO_INCREMENT for table `tb_task`
 --
 ALTER TABLE `tb_task`
-  MODIFY `id_task` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_task` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

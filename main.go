@@ -45,7 +45,7 @@ func main() {
 	e.GET("/about", handler.AboutHandler)
 	e.GET("/baca_task", handler.BacaData)
 	e.POST("/tambah_task", handler.TambahData)
-	e.PUT("/ubah_task", handler.UbahData)
+	e.POST("/ubah_task", handler.UbahData)
 	e.DELETE("/delete_task", handler.DeleteData)
 	e.Static("/static", "assets")
 	e.GET("/create", handler.CreateHandler)

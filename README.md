@@ -1,6 +1,6 @@
 ## Setup nested HTML template in Go Echo web framework
 Database menggunakan mysql <br>
-import yang ada di folder <b>databaseb</b>
+import database yang ada di folder <b>database</b>
 untuk menghubungkannya menggunakan <b>Go-MySQL-Driver</b> <br>
 https://github.com/go-sql-driver/mysql
 

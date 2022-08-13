@@ -1,4 +1,4 @@
-module tugas-go-dtsproa
+module tugas-go-dtsproa-mangwi
 
 go 1.19
 

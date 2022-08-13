@@ -7,7 +7,7 @@ import (
 
 	"github.com/labstack/echo"
 
-	"tugas-go-dtsproa/handler"
+	"tugas-go-dtsproa-mangwi/handler"
 )
 
 // valyala Define the template registry struct

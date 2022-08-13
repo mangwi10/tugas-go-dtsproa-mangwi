@@ -1,0 +1,31 @@
+{{define "title"}}
+  Cherri co | {{index . "name"}}
+{{end}}
+
+{{define "body"}}
+<section>
+  <div class="container">
+    <div class="heading">
+      <img class="heading-img" src="/static/images/heading_logo.png" alt="logo">
+      <h2>TASK</h2>
+      <a href="/create" class="btn-brdr-primary plr-20"><b>CREATE TASK</b></a>
+    </div>
+
+    <div class="row">
+      {{range .data}}
+      <div class="col-md-3 mb-20">
+        <div>
+          <div>
+            <h5><b class="color-primary">{{.Deadline}}</b></h5>
+            <h5 class="mb-10"><b>{{.Nama_pegawai}}</b></h5>
+            <p class="pr-70"> {{.Deskripsi}} </p>
+            <a href="/update?Id_task={{.Id_task}}&Deadline={{.Deadline}}&Nama_pegawai={{.Nama_pegawai}}&Deskripsi={{.Deskripsi}}" class="btn-brdr-primary plr-20"><b>Update</b></a> 
+            <!-- <a href="/delete_task?Id_task={{.Id_task}}" class="btn-brdr-primary plr-20"><b>Delete</b></a> -->
+          </div>
+        </div>
+      </div>
+      {{end}}
+    </div>
+</div>
+</section>
+{{end}}

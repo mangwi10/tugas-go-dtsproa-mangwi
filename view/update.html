@@ -1,0 +1,22 @@
+{{define "title"}}
+Cherri co | {{index . "name"}}
+{{end}}
+
+{{define "body"}}
+<section class="story-area left-text center-sm-text">
+    <div class="heading">
+        <h5 class="mt-10 mb-30">Silahkan Update Task</h5>
+    </div>
+
+    <form class="form-style-1 placeholder-1" action="/ubah_task" method="POST">
+        <div class="row">
+            <input type="text" name="Id_task" placeholder="Id Pegawai" value="{{.Id_task}}">
+            <div class="col-md-12"><input name="Nama_pegawai" class="mb20" type="text" placeholder="Nama Pegawai" value="{{.Nama_pegawai}}"></div>
+            <div class="col-md-12"><input name="Deadline" class="mb20" type="text" placeholder="Deadline" value="{{.Deadline}}"></div>
+            <div class="col-md-12"><textarea name="Deskripsi" class="h-200x ptb-20" placeholder="Deskripsi" >{{.Deskripsi}}</textarea></div>            
+        </div>
+        <h6 class="center-text mtb-30"><button type="submit" class="btn-primaryc plr-25"><b>Update Task</b></button></h6>
+    </form>
+</section>
+
+{{end}}

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	_ "mysql-master"
 	"net/http"
-	"tugas-go-dtsproa/server"
+	"tugas-go-dtsproa-mangwi/server"
 
 	"github.com/labstack/echo"
 )
